@@ -1,7 +1,7 @@
 from lesson2.task_G import calc_min_possible_section_division
 
 
-def test_min_possible_section_division():
+def test_calc_min_possible_section_division():
     assert calc_min_possible_section_division([1, 3, 3, 3, 2])[0] == 3
     assert calc_min_possible_section_division([1, 9, 8, 7, 6, 7, 8, 9, 9, 9, 9, 9, 9, 9, 9, 9])[0] == 3
     assert calc_min_possible_section_division([7, 2, 3, 4, 3, 2, 7])[0] == 3

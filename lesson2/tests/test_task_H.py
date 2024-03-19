@@ -1,7 +1,7 @@
 from lesson2.task_H import find_best_ban
 
 
-def test_min_possible_section_division():
+def test_find_best_ban():
     assert find_best_ban([
         [1, 2],
         [3, 4],
