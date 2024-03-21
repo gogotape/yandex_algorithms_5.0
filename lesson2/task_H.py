@@ -45,7 +45,9 @@ def find_best_ban(table: list[list[int]]):
             if val > max_elem_matrix_without_column_and_row:
                 max_elem_matrix_without_column_and_row = val
 
-    if max_elem_matrix_without_row_and_column < max_elem_matrix_without_column_and_row or (max_elem_matrix_without_row_and_column == max_elem_matrix_without_column_and_row and max_elem_matrix_without_row_val > max_elem_matrix_without_column_val):
+    if (max_elem_matrix_without_row_and_column < max_elem_matrix_without_column_and_row
+            or (max_elem_matrix_without_row_and_column == max_elem_matrix_without_column_and_row
+                and max_elem_matrix_without_row_val > max_elem_matrix_without_column_val)):
         max_res_val = max_elem[0], max_elem_matrix_without_row[1]
     else:
         max_res_val = max_elem_matrix_without_column[0], max_elem[1]
