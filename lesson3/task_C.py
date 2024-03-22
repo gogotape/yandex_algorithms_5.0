@@ -18,7 +18,6 @@ def find_min_numbers_amount_to_delete(nums: list[int]) -> int:
     return minn
 
 
-# main([1, 1, 2, 3, 3, 3, 3, 4, 5, 6])
 if __name__ == '__main__':
     n = int(input())
     nums = list(map(int, input().split()))

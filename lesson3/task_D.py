@@ -18,10 +18,3 @@ if __name__ == '__main__':
     nums = list(map(int, input().split()))
     res = is_some_values_repeating(nums, k)
     print(res)
-
-
-if __name__ == '__main__':
-    n, k  = map(int, input().split())
-    nums = list(map(int, input().split()))
-    res = is_some_values_repeating(nums, k)
-    print(res)
