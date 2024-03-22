@@ -1,15 +1,18 @@
 def is_some_values_repeating(nums: list[int], k: int) -> str:
-    l, r = 0, k - 1
+    l, r = 0, 0
     ln = len(nums)
-    window = set(nums[l:r + 1])
-    while r < ln - 1:
-        r += 1
+    window = set()
+    while r < ln:
         elem = nums[r]
         if elem in window:
             return "YES"
-        window.remove(nums[l])
         window.add(elem)
-        l += 1
+
+        if r - l + 1 > k:
+            window.remove(nums[l])
+            l += 1
+        r += 1
+
     return "NO"
 
 
