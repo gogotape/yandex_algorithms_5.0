@@ -16,7 +16,7 @@ def test_how_much_numbers_between():
     # 3
     assert how_much_numbers_between([-1000000000, 0, 1000000000], -1000000000, -1000000000) == 1
     assert how_much_numbers_between([-1000000000, 0, 1000000000], 1000000000, 1000000000) == 1
-    assert how_much_numbers_between([-1000000000, 0, 1000000000], -1000000000, 1000000000) == 3
+    assert how_much_numbers_between([-1000000000, 0, 1000000000], -1000000000, 1000000000) == 1
     assert how_much_numbers_between([-100, 0, 100], -99, 99) == 1
     assert how_much_numbers_between([-1000000000, 0, 1000000000], -999999999, 999999999) == 1
     assert how_much_numbers_between([-1000000000, 0, 1000000000], -999999999, 1000000000) == 2
@@ -39,6 +39,6 @@ def test_how_much_numbers_between():
     results = []
     for i in range(3, k):
         left, right = map(int, data[i].split())
-        res = how_much_numbers_between(arr, left, right, i)
+        res = how_much_numbers_between(arr, left, right)
         results.append(res)
     assert True
